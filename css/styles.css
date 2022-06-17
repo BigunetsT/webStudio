@@ -13,6 +13,13 @@
 /* вторичный цвет фона #F5F4FA*/
 /* третий цвет фона - подвала  #2F303A */
 
+/* основной цвет границы #ececec*/
+/* вторичный цвет границы #eeeeee */
+
+/*цвет иконок #afb1b8 */
+
+/* функция распределения времени cubic-bezier(0.4, 0, 0.2, 1)*/
+
 :root {
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
@@ -32,6 +39,8 @@
   --secondary-border-color: #eeeeee;
 
   --icon-color: #afb1b8;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 *,
 *::before,
@@ -95,6 +104,10 @@ img {
   line-height: 1.192;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  transition: color 250ms var(--timing-function);
+
+  animation-duration: 1000ms;
 }
 .logo-accent {
   color: var(--accent-color);
@@ -110,6 +123,7 @@ img {
 .nav-list {
   display: flex;
 }
+
 .nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -123,13 +137,29 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+
+  transition: color 250ms var(--timing-function);
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
   color: var(--accent-color);
 }
 .current-link {
+  position: relative;
+
   color: var(--accent-color);
+}
+.current-link::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 .contact-list {
   display: flex;
@@ -145,6 +175,8 @@ img {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: currentColor;
+
+  transition: color 250ms var(--timing-function);
 }
 .contact-list-link:hover,
 .contact-list-link:focus {
@@ -156,6 +188,8 @@ img {
 .contact-list-svg {
   margin-right: 10px;
   fill: currentColor;
+
+  transition: fill 250ms var(--timing-function);
 }
 .contact-list-link:hover .contact-list-svg,
 .contact-list-link:focus .contact-list-svg {
@@ -267,6 +301,28 @@ img {
   display: flex;
   justify-content: space-between;
 }
+.services-list-item {
+  position: relative;
+}
+.services-list-desc {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
 /* END SERVICES */
 
 /* TEAM */
@@ -317,11 +373,15 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
 }
 .social-list-svg {
   width: 20px;
   height: 20px;
   fill: var(--icon-color);
+
+  transition: fill 250ms var(--timing-function);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -342,12 +402,15 @@ img {
   justify-content: center;
   width: 170px;
   height: 92px;
-
   border: 1px solid var(--icon-color);
   border-radius: 4px;
+
+  transition: border-color 250ms var(--timing-function);
 }
 .clients-list-svg {
   fill: var(--icon-color);
+
+  transition: fill 250ms var(--timing-function);
 }
 .clients-list-link:hover,
 .clients-list-link:focus {
@@ -379,6 +442,8 @@ img {
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
+
+  transition: color 250ms var(--timing-function);
 }
 .footer .logo:hover,
 .footer .logo:focus {
@@ -396,6 +461,8 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--third-text-color);
+
+  transition: color 250ms var(--timing-function);
 }
 .physical-address {
   color: var(--primary-white-color);
@@ -418,6 +485,8 @@ img {
 }
 .footer .social-list-link {
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-function);
 }
 .footer .social-list-link:hover,
 .footer .social-list-link:focus {
@@ -449,6 +518,8 @@ img {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 4px;
+
+  transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 .filter-list-btn:hover,
 .filter-list-btn:focus,
@@ -474,6 +545,9 @@ img {
 }
 .gallery-list-link {
   display: block;
+  box-shadow: none;
+
+  transition: box-shadow 250ms var(--timing-function);
 }
 .gallery-list-link:hover,
 .gallery-list-link:focus {
@@ -502,4 +576,92 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+.gallery-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.gallery-list-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  padding: 63px 24px;
+  width: 100%;
+  height: 100%;
+
+  font-size: 18px;
+  line-height: 1.556;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--timing-function);
+}
+.gallery-list-link:hover .gallery-list-overlay,
+.gallery-list-link:focus .gallery-list-overlay {
+  transform: translateY(0);
+}
 /* END PORTFOLIO */
+
+/* MODAL */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition: opacity 500ms var(--timing-function);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: all 500ms var(--timing-function);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms var(--timing-function);
+
+  width: 528px;
+  height: 581px;
+
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+}
+/* END MODAL */

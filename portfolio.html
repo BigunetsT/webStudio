@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -19,7 +23,9 @@
     <header class="header portfolio-header">
       <div class="container">
         <nav class="nav">
-          <a href="./index.html" class="logo link"><span class="logo-accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo link animate__pulse"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
           <ul class="nav-list list">
             <li class="nav-list-item">
               <a href="./index.html" class="nav-list-link link">Студия</a>
@@ -74,13 +80,20 @@
           <ul class="gallery-list list">
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img1.jpg"
-                  alt="Веб-сайт фирмы Технокряк"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img1.jpg"
+                    alt="Веб-сайт фирмы Технокряк"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">
+                    Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                    сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
+                    или частном лице.
+                  </p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">Технокряк</h2>
                   <p class="gallery-list-desc">Веб-сайт</p>
@@ -89,13 +102,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img2.jpg"
-                  alt="Постер с двумя баскетболистами"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img2.jpg"
+                    alt="Постер с двумя баскетболистами"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
@@ -106,13 +122,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img3.jpg"
-                  alt="Приложение ресторана"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img3.jpg"
+                    alt="Приложение ресторана"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">Ресторан <span lang="en">Seafood</span></h2>
                   <p class="gallery-list-desc">Приложение</p>
@@ -121,13 +140,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img4.jpg"
-                  alt="Черные большие наушники"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img4.jpg"
+                    alt="Черные большие наушники"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">Проект <span lang="en">Prime</span></h2>
                   <p class="gallery-list-desc">Маркетинг</p>
@@ -136,13 +158,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img5.jpg"
-                  alt="Две коробки"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img5.jpg"
+                    alt="Две коробки"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">Проект <span lang="en">Boxes</span></h2>
                   <p class="gallery-list-desc">Приложение</p>
@@ -151,13 +176,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img6.jpg"
-                  alt="Веб-сайт"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img6.jpg"
+                    alt="Веб-сайт"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name" lang="en">Inspiration has no Borders</h2>
                   <p class="gallery-list-desc">Веб-сайт</p>
@@ -166,13 +194,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img7.jpg"
-                  alt="Открытый журнал"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img7.jpg"
+                    alt="Открытый журнал"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">Издание <span lang="en">Limited Edition</span></h2>
                   <p class="gallery-list-desc">Дизайн</p>
@@ -181,13 +212,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img8.jpg"
-                  alt="Бирка с надписью LAB EL TAG"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img8.jpg"
+                    alt="Бирка с надписью LAB EL TAG"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name">Проект <span lang="en">LAB</span></h2>
                   <p class="gallery-list-desc">Маркетинг</p>
@@ -196,13 +230,16 @@
             </li>
             <li class="gallery-list-item">
               <a href="" class="gallery-list-link link">
-                <img
-                  class="gallery-list-img"
-                  src="./images/gallery/img9.jpg"
-                  alt="Приложение, открытое на ноутбуке"
-                  width="370"
-                  height="294"
-                />
+                <div class="gallery-thumb">
+                  <img
+                    class="gallery-list-img"
+                    src="./images/gallery/img9.jpg"
+                    alt="Приложение, открытое на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                </div>
                 <div class="gallery-desc-box">
                   <h2 class="gallery-list-name" lang="en">Growing Business</h2>
                   <p class="gallery-list-desc">Приложение</p>

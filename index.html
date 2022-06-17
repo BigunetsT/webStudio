@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -19,7 +23,9 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <a href="./index.html" class="logo link"><span class="logo-accent">Web</span>Studio</a>
+          <a href="./index.html" class="logo link animate__pulse"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
           <ul class="nav-list list">
             <li class="nav-list-item">
               <a href="./index.html" class="nav-list-link link current-link">Студия</a>
@@ -54,7 +60,7 @@
       <section class="hero">
         <div class="overlay">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="modal-btn" type="button">Заказать услугу</button>
+          <button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
       <!-- FEATURES -->
@@ -102,7 +108,9 @@
                 width="370"
                 height="294"
               />
+              <p class="services-list-desc">Десктопные приложения</p>
             </li>
+
             <li class="services-list-item">
               <img
                 class="services-list-img"
@@ -111,6 +119,7 @@
                 width="370"
                 height="294"
               />
+              <p class="services-list-desc">Мобильные приложения</p>
             </li>
             <li class="services-list-item">
               <img
@@ -120,6 +129,7 @@
                 width="370"
                 height="294"
               />
+              <p class="services-list-desc">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -427,5 +437,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-img" width="11" height="11">
+            <use href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
