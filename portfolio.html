@@ -59,7 +59,7 @@
       <!-- GALLERY -->
       <section class="section">
         <div class="container">
-          <h1 hidden>Галлерея работ</h1>
+          <h1 class="visually-hidden">Галлерея работ</h1>
           <ul class="filter-list list">
             <li class="filter-list-item">
               <button class="filter-list-btn current-btn" type="button">Все</button>
@@ -319,6 +319,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-form-wrapper">
+          <form action="#">
+            <b class="footer-call">Подпишитесь на рассылку</b>
+            <label>
+              <input
+                type="email"
+                name="mail"
+                placeholder="E-mail"
+                class="footer-form-input"
+                required
+              />
+            </label>
+            <button type="submit" class="btn footer-btn">
+              Подписаться
+              <svg class="footer-btn-svg" width="24" height="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
