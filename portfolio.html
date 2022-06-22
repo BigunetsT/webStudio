@@ -20,34 +20,34 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header portfolio-header">
-      <div class="container">
+    <header class="page-header page-header--portfolio">
+      <div class="container page-header__container">
         <nav class="nav">
-          <a href="./index.html" class="logo link animate__pulse"
-            ><span class="logo-accent">Web</span>Studio</a
+          <a href="./index.html" class="logo page-header__logo link animate__pulse"
+            ><span class="logo--accent">Web</span>Studio</a
           >
-          <ul class="nav-list list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-link link">Студия</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link link">Студия</a>
             </li>
-            <li class="nav-list-item">
-              <a href="./portfolio.html" class="nav-list-link link current-link">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link nav__link--current">Портфолио</a>
             </li>
-            <li class="nav-list-item"><a class="nav-list-link link" href="">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link link" href="">Контакты</a></li>
           </ul>
         </nav>
         <ul class="contact-list list">
-          <li class="contact-list-item">
-            <a href="mailto:info@devstudio.com" class="contact-list-link link">
-              <svg class="contact-list-svg" width="16" height="12">
+          <li class="contact-list__item">
+            <a href="mailto:info@devstudio.com" class="contact-list__link link">
+              <svg class="contact-list__svg" width="16" height="12">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-list-item">
-            <a href="tel:+380961111111" class="contact-list-link link">
-              <svg class="contact-list-svg" width="10" height="16">
+          <li class="contact-list__item">
+            <a href="tel:+380961111111" class="contact-list__link link">
+              <svg class="contact-list__svg" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -61,188 +61,188 @@
         <div class="container">
           <h1 class="visually-hidden">Галлерея работ</h1>
           <ul class="filter-list list">
-            <li class="filter-list-item">
-              <button class="filter-list-btn current-btn" type="button">Все</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn filter-list__btn--current" type="button">Все</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-list-btn" type="button">Веб-сайты</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Веб-сайты</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-list-btn" type="button">Приложения</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Приложения</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-list-btn" type="button">Дизайн</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Дизайн</button>
             </li>
-            <li class="filter-list-item">
-              <button class="filter-list-btn" type="button">Маркетинг</button>
+            <li class="filter-list__item">
+              <button class="filter-list__btn" type="button">Маркетинг</button>
             </li>
           </ul>
-          <ul class="gallery-list list">
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+          <ul class="gallery__list list">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img1.jpg"
                     alt="Веб-сайт фирмы Технокряк"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">
+                  <p class="card__ad">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
                     или частном лице.
                   </p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">Технокряк</h2>
-                  <p class="gallery-list-desc">Веб-сайт</p>
+                <div class="card__meta">
+                  <h2 class="card__name">Технокряк</h2>
+                  <p class="card__servies">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img2.jpg"
                     alt="Постер с двумя баскетболистами"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">
+                <div class="card__meta">
+                  <h2 class="card__name">
                     Постер <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
-                  <p class="gallery-list-desc">Дизайн</p>
+                  <p class="card__servies">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img3.jpg"
                     alt="Приложение ресторана"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="gallery-list-desc">Приложение</p>
+                <div class="card__meta">
+                  <h2 class="card__name">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card__servies">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img4.jpg"
                     alt="Черные большие наушники"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">Проект <span lang="en">Prime</span></h2>
-                  <p class="gallery-list-desc">Маркетинг</p>
+                <div class="card__meta">
+                  <h2 class="card__name">Проект <span lang="en">Prime</span></h2>
+                  <p class="card__servies">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img5.jpg"
                     alt="Две коробки"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">Проект <span lang="en">Boxes</span></h2>
-                  <p class="gallery-list-desc">Приложение</p>
+                <div class="card__meta">
+                  <h2 class="card__name">Проект <span lang="en">Boxes</span></h2>
+                  <p class="card__servies">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img6.jpg"
                     alt="Веб-сайт"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name" lang="en">Inspiration has no Borders</h2>
-                  <p class="gallery-list-desc">Веб-сайт</p>
+                <div class="card__meta">
+                  <h2 class="card__name" lang="en">Inspiration has no Borders</h2>
+                  <p class="card__servies">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img7.jpg"
                     alt="Открытый журнал"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="gallery-list-desc">Дизайн</p>
+                <div class="card__meta">
+                  <h2 class="card__name">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="card__servies">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img8.jpg"
                     alt="Бирка с надписью LAB EL TAG"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name">Проект <span lang="en">LAB</span></h2>
-                  <p class="gallery-list-desc">Маркетинг</p>
+                <div class="card__meta">
+                  <h2 class="card__name">Проект <span lang="en">LAB</span></h2>
+                  <p class="card__servies">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="gallery-list-item">
-              <a href="" class="gallery-list-link link">
-                <div class="gallery-thumb">
+            <li class="gallery__item">
+              <a href="" class="gallery__link link">
+                <div class="card">
                   <img
-                    class="gallery-list-img"
+                    class="card__img"
                     src="./images/gallery/img9.jpg"
                     alt="Приложение, открытое на ноутбуке"
                     width="370"
                     height="294"
                   />
-                  <p class="gallery-list-overlay">Какой-то текст...</p>
+                  <p class="card__ad">Какой-то текст...</p>
                 </div>
-                <div class="gallery-desc-box">
-                  <h2 class="gallery-list-name" lang="en">Growing Business</h2>
-                  <p class="gallery-list-desc">Приложение</p>
+                <div class="card__meta">
+                  <h2 class="card__name" lang="en">Growing Business</h2>
+                  <p class="card__servies">Приложение</p>
                 </div>
               </a>
             </li>
@@ -251,29 +251,31 @@
       </section>
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-contact">
-          <a href="./index.html" class="logo link"><span class="logo-accent">Web</span>Studio</a>
+    <footer class="page-footer">
+      <div class="container page-footer__container">
+        <div class="address">
+          <a href="./index.html" class="logo page-footer__logo link"
+            ><span class="logo--accent">Web</span>Studio</a
+          >
           <address>
             <ul class="address-list list">
-              <li class="address-list-item">
+              <li class="address-list__item">
                 <a
                   href="https://goo.gl/maps/qzVwiBVwQjiDkdmSA"
-                  class="address-list-link physical-address link"
+                  class="address-list__link address-list__link--white link"
                   target="_blank"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="address-list-item">
-                <a href="mailto:info@devstudio.com " class="address-list-link link"
+              <li class="address-list__item">
+                <a href="mailto:info@devstudio.com " class="address-list__link link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="address-list-item">
-                <a href="tel:+380961111111" class="address-list-link link">+38 096 111 11 11</a>
+              <li class="address-list__item">
+                <a href="tel:+380961111111" class="address-list__link link">+38 096 111 11 11</a>
               </li>
-              <!-- <li class="address-list-item">
+              <!-- <li class="address-list__item">
                             <iframe
                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794497406567!2d30.5383858!3d50.426580699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1654612058746!5m2!1sru!2sua"
                               width="600"
@@ -287,54 +289,54 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social-links">
-          <b class="footer-call">присоединяйтесь</b>
+        <div class="social-links">
+          <b class="appeal">присоединяйтесь</b>
           <ul class="social-list list">
-            <li class="social-list-item">
-              <a href="" class="social-list-link link" aria-label="Ссылка на Instagram">
-                <svg class="social-list-svg">
+            <li class="social-list__item">
+              <a href="" class="social-list__link link" aria-label="Ссылка на Instagram">
+                <svg class="social-list__svg">
                   <use href="./images/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link link" aria-label="Ссылка на Twitter">
-                <svg class="social-list-svg">
+            <li class="social-list__item">
+              <a href="" class="social-list__link link" aria-label="Ссылка на Twitter">
+                <svg class="social-list__svg">
                   <use href="./images/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link link" aria-label="Ссылка на Facebook">
-                <svg class="social-list-svg">
+            <li class="social-list__item">
+              <a href="" class="social-list__link link" aria-label="Ссылка на Facebook">
+                <svg class="social-list__svg">
                   <use href="./images/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-list-item">
-              <a href="" class="social-list-link link" aria-label="Ссылка на LinkedIn">
-                <svg class="social-list-svg">
+            <li class="social-list__item">
+              <a href="" class="social-list__link link" aria-label="Ссылка на LinkedIn">
+                <svg class="social-list__svg">
                   <use href="./images/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-form-wrapper">
-          <form action="#">
-            <b class="footer-call">Подпишитесь на рассылку</b>
+        <div class="form-wrapper">
+          <form class="mailing-form" action="#">
+            <b class="appeal">Подпишитесь на рассылку</b>
             <label>
               <input
                 type="email"
                 name="mail"
                 placeholder="E-mail"
-                class="footer-form-input"
+                class="mailing-form__input"
                 required
               />
             </label>
-            <button type="submit" class="btn footer-btn">
+            <button type="submit" class="btn btn--centered">
               Подписаться
-              <svg class="footer-btn-svg" width="24" height="24">
+              <svg class="btn__svg btn__svg--append" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
