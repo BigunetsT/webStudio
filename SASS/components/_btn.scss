@@ -1,0 +1,28 @@
+.btn {
+  min-width: 200px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  color: $primary-white-color;
+  background-color: $accent-color;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  &--centered {
+    align-self: center;
+  }
+  &--flexed {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__svg--append {
+    margin-left: 12px;
+  }
+}

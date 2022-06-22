@@ -1,0 +1,35 @@
+.clients-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    @extend %link;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: border-color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+  &__svg {
+    fill: $icon-color;
+
+    transition: fill 250ms $timing-function;
+
+    .clients-list__link:hover &,
+    .clients-list__link:focus & {
+      fill: $accent-color;
+    }
+  }
+}

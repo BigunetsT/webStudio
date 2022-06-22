@@ -1,0 +1,7 @@
+@mixin generateBeforeImg($imgList) {
+  @each $imgName in $imgList {
+    .features-list__item--#{$imgName}::before {
+      background-image: url('../../images/features/#{$imgName}.svg');
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.logo {
+  @extend %link;
+
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+
+  transition: color 250ms $timing-function;
+
+  animation-duration: 1000ms;
+
+  &--accent {
+    color: $accent-color;
+  }
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.page-header__logo {
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

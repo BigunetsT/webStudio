@@ -1,0 +1,45 @@
+/* основной шрифт font-family: 'Roboto', sans-serif; */
+/* вторичный шрифт font-family: 'Raleway', sans-serif; */
+
+/* Палитра цветов */
+
+/* основной цвет текста #757575 */
+/* вторичный цвет текста #212121*/
+/* белый цвет  #FFFFFF */
+/* цвет акцента #2196F3*/
+/* третий цвет текста rgba(255, 255, 255, 0.6) */
+
+/* основной цвет фона #E5E5E5*/
+/* вторичный цвет фона #F5F4FA*/
+/* третий цвет фона - подвала  #2F303A */
+
+/* основной цвет границы #ececec*/
+/* вторичный цвет границы #eeeeee */
+
+/*цвет иконок #afb1b8 */
+
+/* функция распределения времени cubic-bezier(0.4, 0, 0.2, 1)*/
+
+$main-font: 'Roboto', sans-serif;
+$secondary-font: 'Raleway', sans-serif;
+
+$primary-text-color: #757575;
+$secondary-text-color: #212121;
+$third-text-color: rgba(255, 255, 255, 0.6);
+$accent-color: #2196f3;
+$primary-white-color: #ffffff;
+
+$primary-bg-color: #ffffff;
+$secondary-bg-color: #f5f4fa;
+$third-bg-color: #2f303a;
+$hero-bg-color: #c4c4c4;
+
+$primary-border-color: #ececec;
+$secondary-border-color: #eeeeee;
+
+$icon-color: #afb1b8;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// список для секции Преимущества (Features)
+$imagesForFeatures: antenna, clock, diagram, astronaut;

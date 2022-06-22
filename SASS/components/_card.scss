@@ -1,0 +1,52 @@
+.card {
+  position: relative;
+  overflow: hidden;
+
+  &__meta {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 24px;
+
+    border: 1px solid $secondary-border-color;
+  }
+  &__name {
+    margin-bottom: 4px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $secondary-text-color;
+  }
+  &__servies {
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+  }
+
+  &__ad {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    padding: 63px 24px;
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform 250ms $timing-function;
+
+    .gallery__link:hover &,
+    .gallery__link:focus & {
+      transform: translateY(0);
+    }
+  }
+}

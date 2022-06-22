@@ -1,0 +1,21 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $secondary-text-color;
+  }
+
+  &__features {
+    padding-top: 107px;
+  }
+  &__services {
+    padding-top: 0;
+  }
+}

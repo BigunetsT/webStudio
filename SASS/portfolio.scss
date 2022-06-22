@@ -1,0 +1,13 @@
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+@import './components/btn';
+
+@import './layout/header';
+@import './layout/gallery';
+@import './layout/footer';
