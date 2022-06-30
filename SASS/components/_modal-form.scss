@@ -3,17 +3,26 @@
   flex-direction: column;
   justify-content: center;
 
-  width: 448px;
+  width: 370px;
   text-align: center;
+
+  @media screen and (min-width: $desctop) {
+    width: 448px;
+  }
 
   &__title {
     margin-bottom: 30px;
 
     font-weight: 700;
-    font-size: 19px;
-    line-height: 1.15;
+    font-size: 20px;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
+
+    @media screen and (min-width: $desctop) {
+      font-size: 19px;
+      line-height: 1.15;
+    }
   }
   &__list {
     @extend %list;
@@ -106,10 +115,16 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.171;
+    font-size: 12px;
+    line-height: 1.167;
+
     letter-spacing: 0.03em;
     color: $primary-text-color;
+
+    @media screen and (min-width: $desctop) {
+      font-size: 14px;
+      line-height: 1.171;
+    }
   }
 
   &__policy-input {

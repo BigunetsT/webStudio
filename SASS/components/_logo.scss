@@ -3,8 +3,8 @@
 
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: $secondary-text-color;
 
@@ -21,19 +21,21 @@
   }
 }
 .page-header__logo {
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-.page-footer__logo {
-  display: block;
-  margin-bottom: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
-  color: $primary-white-color;
-  transition: color 250ms $timing-function;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 88px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+    font-size: 26px;
+    line-height: 1.192;
   }
 }

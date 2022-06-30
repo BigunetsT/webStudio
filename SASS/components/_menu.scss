@@ -1,0 +1,55 @@
+@import '../components/nav';
+@import '../components/contact-list';
+@import '../components/studio-social-list';
+
+.menu-container {
+  display: flex;
+  align-items: center;
+
+  flex-grow: 1;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    padding: 48px 40px;
+
+    background-color: $primary-white-color;
+
+    &.is-open {
+      display: block;
+    }
+  }
+}
+
+.menu-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: fill 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}

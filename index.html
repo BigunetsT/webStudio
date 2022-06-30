@@ -22,37 +22,72 @@
     <!-- HEADER -->
     <header class="page-header">
       <div class="container container--flexed">
-        <nav class="nav">
-          <a href="./index.html" class="logo page-header__logo animate__pulse"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+        <a href="./index.html" class="logo page-header__logo animate__pulse"
+          ><span class="logo--accent">Web</span>Studio</a
+        >
+        <button type="button" class="menu-btn" data-menu-open aria-controls="menu-container">
+          <svg width="24" height="16" aria-label="Открытие мобильного меню">
+            <use href="./images/sprite.svg#icon-open-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <button type="button" class="menu-btn" data-menu-close aria-controls="menu-container">
+            <svg width="19" height="19" aria-label="Закрытие мобильного меню">
+              <use href="./images/sprite.svg#icon-close-menu"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link nav__link--current">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="contact-list">
+            <li class="contact-list__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contact-list__link contact-list__link--mail"
+              >
+                <svg class="contact-list__svg" width="16" height="12">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link">Портфолио</a>
+            <li class="contact-list__item">
+              <a href="tel:+380961111111" class="contact-list__link contact-list__link--tel">
+                <svg class="contact-list__svg" width="10" height="16">
+                  <use href="./images/sprite.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
-            <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="contact-list">
-          <li class="contact-list__item">
-            <a href="mailto:info@devstudio.com" class="contact-list__link">
-              <svg class="contact-list__svg" width="16" height="12">
-                <use href="./images/sprite.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-list__item">
-            <a href="tel:+380961111111" class="contact-list__link">
-              <svg class="contact-list__svg" width="10" height="16">
-                <use href="./images/sprite.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="studio-social-list">
+            <li class="studio-social-list__item">
+              <a href="" class="studio-social-list__link" aria-label="Ссылка на Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="studio-social-list__item">
+              <a href="" class="studio-social-list__link" aria-label="Ссылка на Twitter">Twitter</a>
+            </li>
+            <li class="studio-social-list__item">
+              <a href="" class="studio-social-list__link" aria-label="Ссылка на Facebook"
+                >Facebook</a
+              >
+            </li>
+            <li class="studio-social-list__item">
+              <a href="" class="studio-social-list__link" aria-label="Ссылка на LinkedIn"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -64,7 +99,7 @@
         </div>
       </section>
       <!-- FEATURES -->
-      <section class="section features section__features">
+      <!-- <section class="section features section__features">
         <div class="container">
           <h2 class="section__title visually-hidden">Особенности</h2>
           <ul class="features-list">
@@ -94,9 +129,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- SERVICES -->
-      <section class="section services section__services">
+      <!-- <section class="section services section__services">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="services-list">
@@ -133,9 +168,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- TEAM -->
-      <section class="section team">
+      <!-- <section class="section team">
         <div class="container">
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
@@ -313,9 +348,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- CLIENTS -->
-      <section class="section clients">
+      <!-- <section class="section clients">
         <div class="container">
           <h1 class="section__title">Постоянные клиенты</h1>
           <ul class="clients-list">
@@ -363,10 +398,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- FOOTER -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
       <div class="container container--flexed">
         <div class="address">
           <a href="./index.html" class="logo page-footer__logo"
@@ -389,8 +424,8 @@
               </li>
               <li class="address-list__item">
                 <a href="tel:+380961111111" class="address-list__link">+38 096 111 11 11</a>
-              </li>
-              <!-- <li class="address-list__item">
+              </li> -->
+    <!-- <li class="address-list__item">
                                 <iframe
                                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.7794497406567!2d30.5383858!3d50.426580699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C7LiDQm9C10YHQuCDQo9C60YDQsNC40L3QutC4LCAyNiwg0JrQuNC10LIsIDAyMDAw!5e0!3m2!1sru!2sua!4v1654612058746!5m2!1sru!2sua"
                                   width="600"
@@ -401,7 +436,7 @@
                                   referrerpolicy="no-referrer-when-downgrade"
                                 ></iframe>
                               </li> -->
-            </ul>
+    <!-- </ul>
           </address>
         </div>
         <div class="social-links">
@@ -474,7 +509,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -538,7 +573,7 @@
             />
             <span class="modal-form__checkbox-icon"></span>
             Соглашаюсь с рассылкой и принимаю
-            <a href="" class="modal-form__user-agreement">Условия договора</a>
+            <a href="" class="modal-form__user-agreement"> Условия договора</a>
           </label>
 
           <button type="submit" class="btn btn--centered">Отправить</button>
@@ -546,15 +581,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script>
-      (() => {
-        document.querySelector('.modal-form').addEventListener('submit', e => {
-          e.preventDefault();
-
-          new FormData(e.currentTarget).forEach((value, name) => console.log(`${name}:${value}`));
-          e.currentTarget.reset();
-        });
-      })();
-    </script>
+    <script src="./js/modal-form.js"></script>
+    <script src="./js/mobil-menu.js"></script>
   </body>
 </html>

@@ -30,7 +30,7 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms $timing-function;
 
-  width: 528px;
+  width: 450px;
   box-sizing: border-box;
   padding: 40px;
 
@@ -41,6 +41,10 @@
 
   .backdrop--is-hidden & {
     transform: translate(-50%, -50%) scale(0);
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 528px;
   }
 
   &__close-btn {
