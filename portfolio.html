@@ -92,7 +92,7 @@
     </header>
     <main>
       <!-- GALLERY -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h1 class="visually-hidden">Галлерея работ</h1>
           <ul class="filter-list">
@@ -116,13 +116,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img1.jpg"
-                    alt="Веб-сайт фирмы Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img1-desctop.webp    1x,
+                        ./images/gallery/img1-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img1-desctop.jpg    1x,
+                        ./images/gallery/img1-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img1-tablet.webp    1x,
+                        ./images/gallery/img1-tablet@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img1-tablet.jpg    1x,
+                        ./images/gallery/img1-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img1-mobile.webp    1x,
+                        ./images/gallery/img1-mobile@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img1-mobile.jpg    1x,
+                        ./images/gallery/img1-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img1-mobile.jpg"
+                      alt="Веб-сайт фирмы Технокряк"
+                    />
+                  </picture>
                   <p class="card__ad">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -138,13 +183,59 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img2.jpg"
-                    alt="Постер с двумя баскетболистами"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img2-desctop.webp    1x,
+                        ./images/gallery/img2-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img2-desctop.jpg    1x,
+                        ./images/gallery/img2-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img2-tablet.webp    1x,
+                        ./images/gallery/img2-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img2-tablet.jpg    1x,
+                        ./images/gallery/img2-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img2-mobile.webp    1x,
+                        ./images/gallery/img2-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img2-mobile.jpg    1x,
+                        ./images/gallery/img2-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img2-mobile.jpg"
+                      alt="Постер с двумя баскетболистами"
+                    />
+                  </picture>
+
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -158,13 +249,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img3.jpg"
-                    alt="Приложение ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img3-desctop.webp    1x,
+                        ./images/gallery/img3-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img3-desctop.jpg    1x,
+                        ./images/gallery/img3-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img3-tablet.webp    1x,
+                        ./images/gallery/img3-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img3-tablet.jpg    1x,
+                        ./images/gallery/img3-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img3-mobile.webp    1x,
+                        ./images/gallery/img3-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img3-mobile.jpg    1x,
+                        ./images/gallery/img3-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img3-mobile.jpg"
+                      alt="Приложение ресторана"
+                    />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -176,13 +312,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img4.jpg"
-                    alt="Черные большие наушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img4-desctop.webp    1x,
+                        ./images/gallery/img4-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img4-desctop.jpg    1x,
+                        ./images/gallery/img4-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img4-tablet.webp    1x,
+                        ./images/gallery/img4-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img4-tablet.jpg    1x,
+                        ./images/gallery/img4-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img4-mobile.webp    1x,
+                        ./images/gallery/img4-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img4-mobile.jpg    1x,
+                        ./images/gallery/img4-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img4-mobile.jpg"
+                      alt="Черные большие наушники"
+                    />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -194,13 +375,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img5.jpg"
-                    alt="Две коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img5-desctop.webp    1x,
+                        ./images/gallery/img5-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img5-desctop.jpg    1x,
+                        ./images/gallery/img5-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img5-tablet.webp    1x,
+                        ./images/gallery/img5-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img5-tablet.jpg    1x,
+                        ./images/gallery/img5-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img5-mobile.webp    1x,
+                        ./images/gallery/img5-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img5-mobile.jpg    1x,
+                        ./images/gallery/img5-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img5-mobile.jpg"
+                      alt="Две коробки"
+                    />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -212,13 +438,54 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img6.jpg"
-                    alt="Веб-сайт"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img6-desctop.webp    1x,
+                        ./images/gallery/img6-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img6-desctop.jpg    1x,
+                        ./images/gallery/img6-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img6-tablet.webp    1x,
+                        ./images/gallery/img6-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img6-tablet.jpg    1x,
+                        ./images/gallery/img6-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img6-mobile.webp    1x,
+                        ./images/gallery/img6-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img6-mobile.jpg    1x,
+                        ./images/gallery/img6-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img class="card__img" src="./images/gallery/img6-mobile.jpg" alt="Веб-сайт" />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -230,13 +497,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img7.jpg"
-                    alt="Открытый журнал"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img7-desctop.webp    1x,
+                        ./images/gallery/img7-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img7-desctop.jpg    1x,
+                        ./images/gallery/img7-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img7-tablet.webp    1x,
+                        ./images/gallery/img7-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img7-tablet.jpg    1x,
+                        ./images/gallery/img7-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img7-mobile.webp    1x,
+                        ./images/gallery/img7-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img7-mobile.jpg    1x,
+                        ./images/gallery/img7-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img7-mobile.jpg"
+                      alt="Открытый журнал"
+                    />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -248,13 +560,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img8.jpg"
-                    alt="Бирка с надписью LAB EL TAG"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img8-desctop.webp    1x,
+                        ./images/gallery/img8-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img8-desctop.jpg    1x,
+                        ./images/gallery/img8-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img8-tablet.webp    1x,
+                        ./images/gallery/img8-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img8-tablet.jpg    1x,
+                        ./images/gallery/img8-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img8-mobile.webp    1x,
+                        ./images/gallery/img8-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img8-mobile.jpg    1x,
+                        ./images/gallery/img8-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img8-mobile.jpg"
+                      alt="Бирка с надписью LAB EL TAG"
+                    />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -266,13 +623,58 @@
             <li class="gallery__item">
               <a href="" class="gallery__link">
                 <div class="card">
-                  <img
-                    class="card__img"
-                    src="./images/gallery/img9.jpg"
-                    alt="Приложение, открытое на ноутбуке"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/gallery/img9-desctop.webp    1x,
+                        ./images/gallery/img9-desctop@2x.webp 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img9-desctop.jpg    1x,
+                        ./images/gallery/img9-desctop@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img9-tablet.webp    1x,
+                        ./images/gallery/img9-tablet@2x.webp 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img9-tablet.jpg    1x,
+                        ./images/gallery/img9-tablet@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img9-mobile.webp    1x,
+                        ./images/gallery/img9-mobile@2x.webp 2x
+                      "
+                      media="(min-width:320px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/gallery/img9-mobile.jpg    1x,
+                        ./images/gallery/img9-mobile@2x.jpg 2x
+                      "
+                      media="(min-width:320px)"
+                    />
+                    <img
+                      class="card__img"
+                      src="./images/gallery/img9-mobile.jpg"
+                      alt="Приложение, открытое на ноутбуке"
+                    />
+                  </picture>
                   <p class="card__ad">Какой-то текст...</p>
                 </div>
                 <div class="card__meta">
@@ -283,7 +685,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- FOOTER -->
     <footer class="page-footer">

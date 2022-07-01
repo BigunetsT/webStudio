@@ -2,12 +2,29 @@
   @extend %list;
 
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+  }
+  @media screen and(min-width: $tablet) {
+    justify-content: center;
+
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: $desctop) {
+    margin-bottom: 50px;
+  }
 
   &__item {
     &:not(:last-child) {
       margin-right: 8px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 15px;
+      }
     }
   }
   &__btn {
