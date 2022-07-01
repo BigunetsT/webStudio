@@ -7,10 +7,30 @@
   padding-bottom: 60px;
 
   background-color: $third-bg-color;
+  text-align: center;
+}
+.address {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-right: 70px;
+  }
+}
+.page-footer__contact {
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    justify-content: space-around;
+  }
 }
 .appeal {
   display: block;
-  padding-top: 12px;
+  // padding-top: 12px;
   margin-bottom: 20px;
 
   font-size: 14px;
@@ -25,7 +45,7 @@
   font-style: normal;
 
   &__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
   &__link {
     @extend %link;

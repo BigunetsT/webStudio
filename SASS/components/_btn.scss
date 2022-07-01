@@ -19,8 +19,11 @@
   }
   &--flexed {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
+
+    max-width: 200px;
+    padding-left: 28px;
+    padding-right: 28px;
   }
   &__svg--append {
     margin-left: 12px;

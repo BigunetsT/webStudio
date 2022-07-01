@@ -39,3 +39,16 @@
     line-height: 1.192;
   }
 }
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

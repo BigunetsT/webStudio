@@ -1,6 +1,5 @@
 .container {
   padding: 0 15px;
-
   &--flexed {
     display: flex;
   }
@@ -17,5 +16,12 @@
   }
   @media screen and (min-width: $desctop) {
     width: $desctop;
+  }
+}
+
+.page-footer .container {
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    justify-content: space-between;
   }
 }
